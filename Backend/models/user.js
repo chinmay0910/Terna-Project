@@ -2,18 +2,6 @@ const mongoose = require('mongoose')
 const { Schema } = mongoose;
 
 const UserSchema = new Schema({
-    ngo_name: {
-        type: String,
-        require: true
-    }, 
-    ngo_location: {
-        type: String
-    },
-    goal: {
-        type: [{
-            type: String
-        }]
-    },
     name: {
         type: String,
         require: true
@@ -41,13 +29,6 @@ const UserSchema = new Schema({
     },
     role: {
         type: String
-    },
-    published: {
-        type: [{
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'publishedBooks'
-        }],
-        required: true,
     },
     date: { type: Date, default: Date.now },
 });

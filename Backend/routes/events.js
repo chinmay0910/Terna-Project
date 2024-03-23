@@ -34,7 +34,7 @@ router.post('/addEvents', upload.single('image'), fetchuser, async (req, res) =>
         date: date,
         location,
         image: imageUrl,
-        tag: keywords,
+        tag: keywords,   
         link,
         department: userDepartment
       });

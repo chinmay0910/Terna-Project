@@ -3,9 +3,9 @@ import axios from 'axios';
 
 
 const CreateEventForm = () => {
-  const [eventName, setEventName] = useState('');
+  const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [eventDate, setEventDate] = useState('');
+  const [date, setEventDate] = useState('');
   const [pdfFile, setPdfFile] = useState(null);
   const [goal, setGoals] = useState('');
   const [location, setLocation] = useState('');
@@ -16,9 +16,9 @@ const CreateEventForm = () => {
   
     // Prepare form data
     const formData = new FormData();
-    formData.append('eventName', eventName);
+    formData.append('title', title);
     formData.append('description', description);
-    formData.append('eventDate', eventDate);
+    formData.append('date', date);
     formData.append('goal', goal);
     formData.append('location', location);
     collaborators.forEach((collaborator) => {
@@ -57,7 +57,7 @@ const CreateEventForm = () => {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="eventName" className="block text-sm font-medium text-gray-700">Event Name:</label>
-          <input type="text" id="eventName" value={eventName} onChange={(e) => setEventName(e.target.value)} className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
+          <input type="text" id="eventName" value={eventName} onChange={(e) => setTitle(e.target.value)} className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" />
         </div>
         <div>
           <label htmlFor="description" className="block text-sm font-medium text-gray-700">Description:</label>

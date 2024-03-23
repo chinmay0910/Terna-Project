@@ -28,10 +28,10 @@ const Card = () => {
                         <h1>Goal 1</h1>
                     </div>
                     <div class="desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
+                        <p>End poverty in all its forms everywhere </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -43,10 +43,10 @@ const Card = () => {
                         <h1>Goal 2</h1>
                     </div>
                     <div class="desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
+                        <p>End hunger, achieve food security and improved nutrition and promote sustainable agriculture </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -58,10 +58,10 @@ const Card = () => {
                         <h1>Goal 3</h1>
                     </div>
                     <div class="desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
+                        <p>Ensure healthy lives and promote well-being for all at all ages</p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -73,10 +73,10 @@ const Card = () => {
                         <h1>Goal 4</h1>
                     </div>
                     <div class="desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
+                        <p>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -88,10 +88,10 @@ const Card = () => {
                         <h1>Goal 5</h1>
                     </div>
                     <div class="desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
+                        <p>Achieve gender equality and empower all women and girls</p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -103,10 +103,10 @@ const Card = () => {
                         <h1>Goal 6</h1>
                     </div>
                     <div class="desc">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
+                        <p>Ensure availability and sustainable management of water and sanitation for all </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -211,7 +211,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -226,7 +226,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -256,7 +256,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -271,7 +271,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>
@@ -286,7 +286,7 @@ const Card = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
-                            <a target="_blank" href="#" ><button class="btn">Code</button></a>
+                            <a target="_blank" href="#" ><button class="btn">Collaborate</button></a>
                         </div>
                     </div>
                 </div>

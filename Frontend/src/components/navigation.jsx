@@ -1,11 +1,57 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import LOGO from "/logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons';
 import "../App.css"
+import { useNavigate } from "react-router-dom";
 
 
 function Navigation() {
+    const [user, setUser] = useState();
+    const [IsSignin, setIsSignin] = useState(false);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        (async () => {
+            await getUser();
+
+
+            if (window.localStorage.getItem("UN-auth-token")) {
+                setIsSignin(true);
+                await getUser();
+            }
+            else {
+                navigate("/signin");
+            }
+
+        })()
+    }, [])
+
+
+
+
+    const getUser = async () => {
+        // API call
+        const response = await fetch('http://localhost:5000/api/auth/getuser', {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+                "Auth-Token": localStorage.getItem('UN-auth-token')
+            },
+        });
+        const json = await response.json();
+        await setUser(json)
+        console.log(user);
+    }
+
+    const handleSignout = async () => {
+        localStorage.removeItem('UN-auth-token');
+        await getUser();
+        navigate('/signin');
+        setIsSignin(false);
+        await getUser();
+    }
+
     return (
         <>
             <div className="flex flex-row w-[80%] mx-auto py-8">
@@ -22,18 +68,62 @@ function Navigation() {
                         <input type="text" className=" outline-none bg-transparent w-[85%] p-2" placeholder="search here..." />
                         <FontAwesomeIcon className="w-[15%] bg-[#00adef] p-0 m-0 h-full text-white" icon={faMagnifyingGlass} />
                     </div>
-                    <FontAwesomeIcon className="w-[20%] text-3xl" icon={faUser} />
+                    {/* <FontAwesomeIcon className="w-[20%] text-3xl" icon={faUser} /> */}
                 </div>
             </div>
 
             <div className="sticky top-0 bg-gray-500">
                 <nav className="flex flex-row justify-center" aria-label="Global">
                     <div className="border-l border-white"></div>
-                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Home</a><div className="border-l border-white"></div>
-                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">About</a><div className="border-l border-white"></div>
-                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Engage</a><div className="border-l border-white"></div>
-                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">SDG Actions</a><div className="border-l border-white"></div>
-                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">login</a><div className="border-l border-white"></div>
+                    <a href="/" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Home</a><div className="border-l border-white"></div>                  
+                    <a href="/data" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Data Visualization</a><div className="border-l border-white"></div>
+                {/* {
+                    user.role == "gov"
+                    ?
+                    <>
+                    <a href="/govrn" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Government</a><div className="border-l border-white"></div>
+                    </>
+                    :
+                    ""
+                } */}
+                
+                
+                {/* {
+                    user.role == "gov"
+                    ?
+                    <>
+                    <a href="/govrn" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Government</a><div className="border-l border-white"></div>
+                    </>
+                    :
+                    ""
+                } */}
+                    {/* {
+                        user.role == "sa"
+                        ? 
+                        <>
+                        <a href="/sa" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Super Admin</a><div className="border-l border-white"></div>
+                        </>
+                        :
+                        user.role == "ngo"
+                        ?
+                        <>
+                        <a href="/ngo" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">N.G.O</a>
+                        </>
+                        :
+                        ""
+                    } */}
+
+
+                    {
+                        IsSignin ?
+                            <button className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4" onClick={handleSignout}>Logout</button>
+                            :
+                            <>
+                                <a href="/signin" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">login</a><div className="border-l border-white"></div>
+                            </>
+
+                    }
+
                 </nav>
             </div>
         </>
