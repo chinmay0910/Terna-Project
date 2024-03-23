@@ -1,23 +1,23 @@
 import Goal1 from "/images/img-goal-1.jpg";
 import Goal2 from "/images/img-goal-2.jpg";
 import Goal3 from "/images/img-goal-3.jpg";
-import Goal4 from "/images/img-goal-4.jpg";
-import Goal5 from "/images/img-goal-5.jpg";
-import Goal6 from "/images/img-goal-6.jpg";
-import Goal7 from "/images/img-goal-7.jpg";
-import Goal8 from "/images/img-goal-8.jpg";
-import Goal9 from "/images/img-goal-9.jpg";
-import Goal10 from "/images/img-goal-10.jpg";
-import Goal11 from "/images/img-goal-11.jpg";
-import Goal12 from "/images/img-goal-12.jpg";
-import Goal13 from "/images/img-goal-13.jpg";
-import Goal14 from "/images/img-goal-14.jpg";
-import Goal15 from "/images/img-goal-15.jpg";
-import Goal16 from "/images/img-goal-16.jpg";
-import Goal17 from "/images/img-goal-17.jpg";
+// import Goal4 from "/images/img-goal-4.jpg";
+// import Goal5 from "/images/img-goal-5.jpg";
+// import Goal6 from "/images/img-goal-6.jpg";
+// import Goal7 from "/images/img-goal-7.jpg";
+// import Goal8 from "/images/img-goal-8.jpg";
+// import Goal9 from "/images/img-goal-9.jpg";
+// import Goal10 from "/images/img-goal-10.jpg";
+// import Goal11 from "/images/img-goal-11.jpg";
+// import Goal12 from "/images/img-goal-12.jpg";
+// import Goal13 from "/images/img-goal-13.jpg";
+// import Goal14 from "/images/img-goal-14.jpg";
+// import Goal15 from "/images/img-goal-15.jpg";
+// import Goal16 from "/images/img-goal-16.jpg";
+// import Goal17 from "/images/img-goal-17.jpg";
 import "../../public/khushil.css"
 
-const Card = () => {
+const CardNgo = () => {
     return (
         <div className="flex flex-row flex-wrap justify-center items-center">
 
@@ -28,8 +28,7 @@ const Card = () => {
                         <h1>Goal 1</h1>
                     </div>
                     <div class="desc">
-                        <p>End poverty in all its forms everywhere
- </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum at nemo iste aut possimus, est modi repellendus quia, alias ea enim pariatur illo, iure iusto aliquid quam ipsam. Amet, voluptate! Iste deserunt corporis voluptatibus quo illo assumenda laudantium quas praesentium. </p>
                         <div class="flexRow buttons">
                             <a target="_blank" href="#" ><button class="btn">View</button></a>
                             <a target="_blank" href="#" ><button class="btn">Code</button></a>
@@ -37,7 +36,7 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <div class="project_box card w-[20%]">
+           <div class="project_box card w-[20%]">
                 <img src={Goal2} class="projectImg" alt="" />
                 <div class="intro skills_row">
                     <div class="tag">
@@ -67,7 +66,7 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <div class="project_box card w-[20%]">
+             {/* <div class="project_box card w-[20%]">
                 <img src={Goal4} class="projectImg" alt="" />
                 <div class="intro skills_row">
                     <div class="tag">
@@ -276,7 +275,7 @@ const Card = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <div class="project_box card w-[20%]">
                 <img src={Goal1} class="projectImg" alt="" />
                 <div class="intro skills_row">
@@ -325,4 +324,4 @@ const Card = () => {
     );
 }
 
-export default Card;
+export default CardNgo;

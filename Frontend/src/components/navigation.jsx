@@ -12,6 +12,7 @@ function Navigation() {
                 <div className="w-[10%]">
                     <img src={LOGO} alt="logo" />
                 </div>
+                
                 <div className="flex flex-col text-left ms-16 w-[50%]">
                     <div className="font-bold text-2xl " >Department of Economic and Social Affairs</div>
                     <div className="text-2xl">Sustainable Development</div>
@@ -31,7 +32,7 @@ function Navigation() {
                     <div className="border-l border-white"></div>
                     <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Home</a><div className="border-l border-white"></div>
                     <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">About</a><div className="border-l border-white"></div>
-                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Engage</a><div className="border-l border-white"></div>
+                    {/* <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Engage</a><div className="border-l border-white"></div> */}
                     <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">SDG Actions</a><div className="border-l border-white"></div>
                     <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">login</a><div className="border-l border-white"></div>
                 </nav>
