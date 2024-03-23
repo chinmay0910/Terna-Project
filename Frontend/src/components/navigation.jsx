@@ -2,7 +2,7 @@ import React from "react";
 import LOGO from "../../public/logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons';
-
+import "../App.css"
 
 
 function Navigation() {
@@ -13,7 +13,7 @@ function Navigation() {
                     <img src={LOGO} alt="logo" />
                 </div>
                 <div className="flex flex-col text-left ms-16 w-[50%]">
-                    <div className="font-bold text-2xl">Department of Economic and Social Affairs</div>
+                    <div className="font-bold text-2xl " >Department of Economic and Social Affairs</div>
                     <div className="text-2xl">Sustainable Development</div>
                 </div>
 
@@ -26,13 +26,14 @@ function Navigation() {
                 </div>
             </div>
 
-            <div className="sticky top-0 p-4 bg-gray-500">
-                <nav class="flex flex-row space-x-4" aria-label="Global">
-                    <a href="#" class="text-white hover:font-bold hover:text-white">Home</a><div class="border-l border-white"></div>
-                    <a href="#" class="text-white hover:font-bold hover:text-white">About</a><div class="border-l border-white"></div>
-                    <a href="#" class="text-white hover:font-bold hover:text-white">Engage</a><div class="border-l border-white"></div>
-                    <a href="#" class="text-white hover:font-bold hover:text-white">SDG Actions</a><div class="border-l border-white"></div>
-                    <a href="#" class="text-white hover:font-bold hover:text-white">login</a><div class="border-l border-white"></div>
+            <div className="sticky top-0 bg-gray-500">
+                <nav className="flex flex-row justify-center" aria-label="Global">
+                    <div className="border-l border-white"></div>
+                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Home</a><div className="border-l border-white"></div>
+                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">About</a><div className="border-l border-white"></div>
+                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Engage</a><div className="border-l border-white"></div>
+                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">SDG Actions</a><div className="border-l border-white"></div>
+                    <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">login</a><div className="border-l border-white"></div>
                 </nav>
             </div>
         </>

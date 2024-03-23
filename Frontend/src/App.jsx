@@ -2,7 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Navigation from './components/Navigation'
+import Navigation from './components/navigation'
+import Statistics from './components/Statistics'
+import Card from './components/Card'
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
   return (
     <>
       <Navigation/>
+      <Statistics/>
+      <Card/>
     </>
   )
 }
