@@ -13,7 +13,7 @@ function Navigation() {
                     <img src={LOGO} alt="logo" />
                 </div>
                 <div className="flex flex-col text-left ms-16 w-[50%]">
-                    <div className="font-bold text-2xl">Department of Economic and Social Affairs</div>
+                    <div className="font-bold text-2xl ">Department of Economic and Social Affairs</div>
                     <div className="text-2xl">Sustainable Development</div>
                 </div>
 
