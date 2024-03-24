@@ -224,6 +224,7 @@ router.get('/getuser', fetchuser, async (req, res) => {
     }
 })
 
+
 router.patch('/:id', async (req, res) => {
     const id = req.params.id;
     const { verified } = req.body; // Assuming you're sending verified status in the request body

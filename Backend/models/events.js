@@ -27,9 +27,13 @@ const eventSchema = new Schema({
         required: true,
     },
     actions: {
-        type: [String]
+        type: [{
+            heading: String,
+            description: String
+        }],
+        default: [] 
     },
-    collabators: {
+    collaborators: {
         type: [{
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User'

@@ -58,9 +58,10 @@ function Navigation() {
                 <div className="w-[10%]">
                     <img src={LOGO} alt="logo" />
                 </div>
+
                 <div className="flex flex-col text-left ms-16 w-[50%]">
-                    <div className="font-bold text-2xl " >Department of Economic and Social Affairs</div>
-                    <div className="text-2xl">Sustainable Development</div>
+                    <div className="font-bold text-2xl " >Department of {user && (user.ngo_name || user.name)  } Affairs</div>
+                    <div className="text-2xl">{user && (user.ngo_location || user.address) }</div>
                 </div>
 
                 <div className="w-[40%] flex justify-end items-center">
@@ -75,9 +76,12 @@ function Navigation() {
             <div className="sticky top-0 bg-gray-500">
                 <nav className="flex flex-row justify-center" aria-label="Global">
                     <div className="border-l border-white"></div>
-                    <a href="/" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Home</a><div className="border-l border-white"></div>                  
-                    <a href="/data" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Data Visualization</a><div className="border-l border-white"></div>
-                {/* {
+                    <a href="/" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Home</a><div className="border-l border-white"></div>
+                    <a href="/registeration" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Register</a><div className="border-l border-white"></div>
+
+                    {/* <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Data Analysis </a><div className="border-l border-white"></div> */}
+                    {
+                /* {
                     user.role == "gov"
                     ?
                     <>
@@ -86,32 +90,41 @@ function Navigation() {
                     :
                     ""
                 } */}
-                
-                
-                {/* {
-                    user.role == "gov"
-                    ?
-                    <>
-                    <a href="/govrn" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Government</a><div className="border-l border-white"></div>
-                    </>
-                    :
-                    ""
-                } */}
+
+
                     {/* {
-                        user.role == "sa"
-                        ? 
-                        <>
-                        <a href="/sa" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Super Admin</a><div className="border-l border-white"></div>
-                        </>
-                        :
+                    user.role == "gov"
+                    ?
+                    <>
+                    <a href="/govrn" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Government</a><div className="border-l border-white"></div>
+                    </>
+                    :
+                    ""
+                } */}
+                    {user && (
                         user.role == "ngo"
-                        ?
-                        <>
-                        <a href="/ngo" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">N.G.O</a>
-                        </>
-                        :
-                        ""
-                    } */}
+                            ?
+                            <>
+                                {/* <a href="/data" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Data Visualization</a><div className="border-l border-white"></div> */}
+                                <a href="#" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">About</a><div className="border-l border-white"></div>
+                                <a href="/addevents" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">ADD Event </a><div className="border-l border-white"></div>
+                                <a href="/addactions" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">ADD Actions </a><div className="border-l border-white"></div>
+                                <a href="/upcommingngoevents" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Notifications </a><div className="border-l border-white"></div>
+                                <a href="/dashboardNGO" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Data Analysis </a><div className="border-l border-white"></div>
+                            </>
+                            :
+                            user.role == "gov"
+                                ?
+                                <>
+                                    <a href="/govevents" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4">Events </a><div className="border-l border-white"></div>
+                                    <a href="/data" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Data Visualization</a><div className="border-l border-white"></div>
+                                    <a href="/generalAds" className="text-white hover:font-bold hover:text-white  hover:bg-gray-900 p-4 mx-12">Generate Advertisement</a><div className="border-l border-white"></div>
+                                </>
+                                :
+                                "" 
+
+                    )
+                    }
 
 
                     {
